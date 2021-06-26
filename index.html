@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Srikanta Panigrahy" />
+  <meta name="generator" content="Hugo 0.82.0" />
+  <link rel="shortcut icon" href="assets/icons/Cutezero_icon.jpg" type="image/x-icon" />
+  <title>Odisha Land calculator | ଓଡ଼ିଶା ଜମି ଗଣତି</title>
+
+  <link rel="canonical" href="https://www.cutezero.com/" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+  <header class="site-header sticky-top py-1">
+    <nav class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2" href="https://www.cutezero.com/" aria-label="Product">
+        <img class="" src="../assets/icons/Cutezero_icon.jpg" alt="Home" style="width: 40px" />
+      </a>
+    </nav>
+  </header>
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h2>Odisha Bhulekh Land Calculation</h2>
+        <h2>ଓଡ଼ିଶା ଭୁଲେଖ ଜମି ଗଣତି</h2>
+        <p class="lead">Select below option for land calculation.</p>
+        <p class="lead">ଜମି ଗଣନା ପାଇଁ ନିମ୍ନରେ ବିକଳ୍ପ ଚୟନ କରନ୍ତୁ |</p>
+        <hr />
+      </div>
+
+      <div class="row g-5 justify-content-md-center">
+        <div class='cz-sub-menu-nav col-md-7 col-lg-8'>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#length-unit-converter">Length | ଦୈର୍ଘ୍ୟ </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#area-unit-converter">Area | କ୍ଷେତ୍ର</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3" id="length-unit-converter">Length Unit | ଦୈର୍ଘ୍ୟ ଏକକ</h4>
+          <hr class="my-4" />
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="unit1" class="form-label">From Unit | ଏକକ ରୁ:</label>
+              <select class="form-select" id="unit1" required>
+                <!-- <option value="foot">Foot | ଫୁଟ</option>
+                <option value="metre">Metre | ମିଟର</option>
+                <option value="centimetre">Centimetre | ସେଣ୍ଟିମିଟର</option>
+                <option value="millimetre">Millimetre | ମିଲିମିଟର</option>
+                <option value="kilometre">Kilometre | କିଲୋମିଟର</option>
+                <option value="inch">inch | ଇଞ୍ଚ</option>
+                <option value="hand">Hand | ହାତ</option> -->
+              </select>
+              <small class="text-muted">1 Hand | ହାତ unit = 1.5 Foot | ଫୁଟ or 45.72 centimetre</small>
+              <div class="invalid-feedback">
+                Please select a valid unit.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="input1" class="form-label">Enter a number</label>
+              <input type="number" class="form-control" id="input1" placeholder="" name="input1" required />
+              <div class="invalid-feedback">Valid number is required. | ଏକ ସଠିକ୍ ସଂଖ୍ୟା ଆବଶ୍ୟକ |</div>
+            </div>
+            <div class="col-md-6">
+              <label for="unit2" class="form-label">To Unit | ଏକକ କୁ:</label>
+              <select class="form-select" id="unit2" required>
+                <!-- <option value="hand">Hand | ହାତ</option>
+                <option value="metre">Metre | ମିଟର</option>
+                <option value="centimetre">Centimetre | ସେଣ୍ଟିମିଟର</option>
+                <option value="millimetre">Millimetre | ମିଲିମିଟର</option>
+                <option value="kilometre">Kilometre | କିଲୋମିଟର</option>
+                <option value="inch">inch | ଇଞ୍ଚ</option>
+                <option value="foot">Foot | ଫୁଟ</option> -->
+              </select>
+              <small class="text-muted">1 Hand | ହାତ unit = 1.5 Foot | ଫୁଟ or 45.72 centimetre</small>
+              <div class="invalid-feedback">
+                Please select a valid unit.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="input2" class="form-label">Calculated number</label>
+              <input type="number" class="form-control" id="input2" placeholder="" name="input2" disabled />
+            </div>
+          </div>
+
+          <hr class="my-4" />
+          <button class="w-100 btn btn-primary btn-lg submit-btn length-calc-btn" type="submit">
+            Calculate | ଗଣନା କର
+          </button>
+          <hr class="my-4" />
+          <div>
+            <p class="mb-1"><strong>Note | ଧ୍ୟାନ ଦିଅନ୍ତୁ :</strong> </p>
+            <p class="mb-1">
+            <ul>
+              <li>1 Hand | ୧ ହାତ unit = 1.5 Foot | ଫୁଟ or 45.72 centimetre</li>
+              <li>Any data issues please raise an issue at <a
+                  href="https://github.com/srikanta72/land-calc/issues">Report an issue</a> </li>
+              <li>Connect us with | ମତାମତ ପାଇଁ <a href="mailto:teamcutezero@gmail.com">ଆମ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ</a> </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3" id="area-unit-converter">Area Unit | କ୍ଷେତ୍ର ଏକକ</h4>
+          <hr class="my-4" />
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="area-unit1" class="form-label">From Unit | ଏକକ ରୁ:</label>
+              <select class="form-select" id="area-unit1" required>
+                <!-- <option value="sqfoot">Square Foot | ବର୍ଗ ଫୁଟ</option>
+                <option value="sqmetre">Square Metre | ବର୍ଗ ମିଟର</option>
+                <option value="sqcentimetre">Square Centimetre | ବର୍ଗ ସେଣ୍ଟିମିଟର</option>
+                <option value="sqmillimetre">Square Millimetre | ବର୍ଗ ମିଲିମିଟର</option>
+                <option value="sqkilometre">Square Kilometre | ବର୍ଗ କିଲୋମିଟର</option>
+                <option value="sqinch">Square inch | ବର୍ଗ ଇଞ୍ଚ</option>
+                <option value="sqhand">Square Hand | ବର୍ଗ ହାତ</option> -->
+              </select>
+              <small class="text-muted">1 Hand | ହାତ unit = 1.5 Foot | ଫୁଟ or 45.72 centimetre</small>
+              <div class="invalid-feedback">
+                Please select a valid unit.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="area-input1" class="form-label">Enter a number</label>
+              <input type="number" class="form-control" id="area-input1" placeholder="" name="area-input1" required />
+              <div class="invalid-feedback">Valid number is required. | ଏକ ସଠିକ୍ ସଂଖ୍ୟା ଆବଶ୍ୟକ |</div>
+            </div>
+            <div class="col-md-6">
+              <label for="area-unit2" class="form-label">To Unit | ଏକକ କୁ:</label>
+              <select class="form-select" id="area-unit2" required>
+                <!-- <option value="sqmetre">Square Metre | ବର୍ଗ ମିଟର</option>
+                <option value="sqfoot">Square Foot | ବର୍ଗ ଫୁଟ</option>
+                <option value="sqcentimetre">Square Centimetre | ବର୍ଗ ସେଣ୍ଟିମିଟର</option>
+                <option value="sqmillimetre">Square Millimetre | ବର୍ଗ ମିଲିମିଟର</option>
+                <option value="sqkilometre">Square Kilometre | ବର୍ଗ କିଲୋମିଟର</option>
+                <option value="sqinch">Square inch | ବର୍ଗ ଇଞ୍ଚ</option>
+                <option value="sqhand">Square Hand | ବର୍ଗ ହାତ</option> -->
+              </select>
+              <small class="text-muted">1 Hand | ହାତ unit = 1.5 Foot | ଫୁଟ or 45.72 centimetre</small>
+              <div class="invalid-feedback">
+                Please select a valid unit.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="area-input2" class="form-label">Calculated number</label>
+              <input type="number" class="form-control" id="area-input2" placeholder="" name="area-input2" disabled />
+            </div>
+          </div>
+
+          <hr class="my-4" />
+          <button class="w-100 btn btn-primary btn-lg submit-btn area-calc-btn" type="submit">
+            Calculate | ଗଣନା କର
+          </button>
+          <hr class="my-4" />
+          <div>
+            <p class="mb-1"><strong>Note | ଧ୍ୟାନ ଦିଅନ୍ତୁ :</strong> </p>
+            <p class="mb-1">
+            <ul>
+              <li>1 Hand | ୧ ହାତ unit = 1.5 Foot | ଫୁଟ or 45.72 centimetre</li>
+              <li>Any data issues please raise an issue at <a
+                  href="https://github.com/srikanta72/land-calc/issues">Report an issue</a> </li>
+              <li>Connect us with | ମତାମତ ପାଇଁ <a href="mailto:teamcutezero@gmail.com">ଆମ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ</a> </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2025 No Copyright <a href="mailto:srikanta.ydon@gmail.com">Srikanta Panigrahy</a></p>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="form-validation.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
